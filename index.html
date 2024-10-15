@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Route Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bus Route Finder</h1>
+        <form id="route-form">
+            <label for="start">Select Starting Point:</label>
+            <select id="start" required>
+                <option value="" disabled selected>Select Starting Point</option>
+            </select>
+
+            <label for="end">Select Destination Point:</label>
+            <select id="end" required>
+                <option value="" disabled selected>Select Destination Point</option>
+            </select>
+
+            <button type="submit">Find Bus Route</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
